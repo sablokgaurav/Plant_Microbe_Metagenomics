@@ -60,7 +60,7 @@ class UpsetPlot:
             if plot[i] == "violin" and plotindex == "violin":
                 bacterial_plot = UpSetPlotly(samples=final_counts, 
                 sample_names=final_labels, 
-                order_by='decreasing',plot_type='box')
+                order_by='decreasing',plot_type='violin')
                 usp.plot()
             elif plot[i] == "box" and plotindex == "box":
                 bacterial_plot = UpSetPlotly(samples=final_counts, 
@@ -70,7 +70,7 @@ class UpsetPlot:
             elif plot[i] == "swarm" and plotindex == "swarm":
                 bacterial_plot = UpSetPlotly(samples=final_counts, 
                 sample_names=final_labels, 
-                order_by='decreasing',plot_type='box')
+                order_by='decreasing',plot_type='swarm')
                 usp.plot()
             else:
                 print("No_plot_type_selected")
