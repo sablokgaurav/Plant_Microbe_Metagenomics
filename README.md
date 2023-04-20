@@ -1,2 +1,2 @@
 # metagenomics_analysis
-metagenomics_analysis
+This repository contains the codes and the analysis for the plant and the microbes metagenomics analysis and it will be continously updated. I am also merging the same with the datascience by adding additional functions so that you can analyse the metagenomics and the microbes dataframe in a better way. In this, I am only focussing on the metagenomes, metagenomics, data science in metagenomics and other associated topics. 
