@@ -1,3 +1,4 @@
+import venn
 def draw(infile,speciesC, conditionC, options, fontsize, filename):
     """_summary_
     a complete function to make the venn plots for all the metagenomics
@@ -42,7 +43,7 @@ def draw(infile,speciesC, conditionC, options, fontsize, filename):
                 venn(plot, fontsize=fontsize, legend = "upperleft")
             else:
                 if options[i] and options == percentage:
-                    venn(plot, fmt= {percentage:.2f}%, fontsize = 8, legend_loc = "upper left")
+                    venn(plot, fmt= "{percentage:.2f}%", fontsize = 8, legend_loc = "upper left")
         write_columns = []
            for i in range(len(conditions)):
             wtite.append([condition[i], set(dataframe[["species","condition"]].
