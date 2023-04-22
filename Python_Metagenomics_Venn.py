@@ -46,7 +46,7 @@ def draw(infile,speciesC, conditionC, options, fontsize, filename):
                     venn(plot, fmt= "{percentage:.2f}%", fontsize = 8, legend_loc = "upper left")
         write_columns = []
            for i in range(len(conditions)):
-            wtite.append([condition[i], set(dataframe[["species","condition"]].
+            wtite_columns.append([condition[i], set(dataframe[["species","condition"]].
                                  where(dataframe["condition"] == conditions[i]).
                                                  dropna().iloc[::,0].tolist())])
         length_features = []
