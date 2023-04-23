@@ -86,6 +86,7 @@ def tRNADifference(self):
     sns.histplot(pd.Series(tRNAdiff))
     plt.show()
    
+#made up data for tests
     number	version	feature	start	end	Unnamed: 5	annotations
 0	1	TAIR10	chromosome	1	30427671	.	ID=chromosome:1;Alias=Chr1,CP002684.1,NC_003070.9
 1	1	araport11	gene	10942648	10944727	-	ID=gene:AT1G30814;Name=AT1G30814;biotype=prote...
