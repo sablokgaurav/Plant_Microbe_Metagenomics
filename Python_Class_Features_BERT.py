@@ -76,13 +76,13 @@ class ExtractFeatures:
                  [gene_fasta[i+1:] for j in range(len(gene_fasta)) for i in range(len(gene_fasta)-(j-1))]))))
         
         exonBERT = []
-        geneBERT.append([exon_fasta[:i]for i in range(len(exon_fasta))]+
+        exonBERT.append([exon_fasta[:i]for i in range(len(exon_fasta))]+
              set(list(filter(None,[exon_fasta[i:i+j] for j in range(len(exon_fasta)) 
                  for i in range(len(exon_fasta)-(j-1))])))+set(list(filter(None,
                  [gene_fasta[i+1:] for j in range(len(gene_fasta)) for i in range(len(exon_fasta)-(j-1))]))))
 
         intronBERT = []
-        geneBERT.append([intron_fasta[:i]for i in range(len(intron_fasta))]+
+        intronBERT.append([intron_fasta[:i]for i in range(len(intron_fasta))]+
              set(list(filter(None,[inton_fasta[i:i+j] for j in range(len(intron_fasta)) 
                  for i in range(len(intron_fasta)-(j-1))])))+set(list(filter(None,
                  [gene_fasta[i+1:] for j in range(len(intron_fasta)) for i in range(len(intron_fasta)-(j-1))]))))
