@@ -16,7 +16,7 @@ class ExtractFeatures:
         genefasta = []
         with open(filename, "r+") as fname:
             for line in fname.readlines():
-                fasta.append(''.join(line.strip().split()))
+                genefasta.append(''.join(line.strip().split()))
                 return fasta
         if feature == "gene":
             genestart = list(map(int,list(map(int,chrom[["version", "start", "end", "feature"]].
