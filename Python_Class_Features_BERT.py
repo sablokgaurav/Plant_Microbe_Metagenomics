@@ -54,7 +54,7 @@ class ExtractFeatures:
             for i in range(len(genestart)):
                 exon_fasta = []
                 exon_fasta.append(genefasta[exonstart[i]:exonend[i]])
-       elif feature == "gene":
+        elif feature == "gene":
             for i in range(len(genestart)):
                 tRNA_fasta = []
                 tRNA_fasta.append(genefasta[tRNAstart[i]:tRNAend[i]])
