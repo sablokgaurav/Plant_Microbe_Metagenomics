@@ -77,7 +77,7 @@ suppressPackageStartupMessages(library(PanVizGenerator, pos = "package:base"))
 suppressPackageStartupMessages(library(ggmsa, pos = "package:base"))
 suppressPackageStartupMessages(library(venn, pos = "package:base"))
 suppressPackageStartupMessages(library(msa, pos = "package:base"))
-suppressPackageStartupMessages(library(DECIPHER, package = "package:base"))
+suppressPackageStartupMessages(library(DECIPHER, pos = "package:base"))
 
 p <- arg_parser(
  " An integrated pipeline for the prediction of the bacterial genomes and 
